@@ -1,8 +1,12 @@
 # Architecture and Execution Specification
 
 ## Repository
-This harness repository: `webgraphx/Nikoo`  
-Product target (when authorized): separate product repository (not modified by this package).
+**Official project repository:** `webgraphx/Nikoo`  
+This repository is the single official home for:
+1. The Agent Harness (already present and active).
+2. The future Nikoo Dashboard UI MVP source code (to be added only after G3 authorization).
+
+No separate product repository is required unless the user explicitly decides otherwise.
 
 ## Harness model
 User → Controller → Project State & Policies → Permission Gate → Spec Analyst → Design System → Module Agents → AI Mock Adapter → QA/Security → Build & Package → Clean extraction test → Human release approval.
@@ -38,11 +42,12 @@ A state transition requires its gate's evidence and approval. No agent may self-
 
 ## Proposed project areas
 Confirm actual repository structure during G0 before mapping these to paths:
-- `src/` source UI, styles, modules and data adapters
-- `public/` static assets
-- `tests/` automated acceptance checks
+- `src/` source UI, styles, modules and data adapters (future)
+- `public/` static assets (future)
+- `tests/` automated acceptance checks (partially present)
 - `dist/` build output, generated only when authorized
 - `docs/` product requirements, design system and test reports
+- `harness/`, `agents/`, `workflows/`, `adapters/`, `skills/`, `templates/` — harness (present)
 
 ## Output deliverables
 1. Source files.
